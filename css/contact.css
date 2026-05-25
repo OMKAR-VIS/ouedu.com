@@ -1,0 +1,23 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Segoe UI', sans-serif; background: linear-gradient(135deg, #667eea, #764ba2); color: #fff; }
+.navbar { display: flex; justify-content: space-between; align-items: center; padding: 14px 5%; background: rgba(255,255,255,0.97); position: fixed; width: 100%; top: 0; z-index: 1000; }
+.logo-section { display: flex; gap: 10px; align-items: center; color: #667eea; font-weight: 700; }
+.logo-section img { width: 40px; height: 40px; object-fit: contain; }
+.menu a { text-decoration: none; color: #333; margin: 0 4px; padding: 6px 12px; border-radius: 8px; }
+.menu a.active, .menu a:hover { color: #667eea; background: #eef2ff; }
+.contact-hero { padding: 120px 20px 40px; }
+.contact-wrap { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+.contact-info { padding: 10px; }
+.contact-item { background: rgba(255,255,255,0.16); border-radius: 12px; padding: 12px; margin-bottom: 10px; display: flex; gap: 12px; align-items: center; }
+.contact-form { background: #fff; color: #0f172a; border-radius: 16px; padding: 24px; }
+.contact-form h3 { margin-bottom: 14px; }
+.form-group { position: relative; margin-bottom: 12px; }
+.form-group i { position: absolute; top: 14px; left: 12px; color: #94a3b8; }
+.form-group input, .form-group textarea { width: 100%; border: 2px solid #e2e8f0; border-radius: 10px; padding: 11px 12px 11px 38px; }
+.submit-btn { width: 100%; border: 0; border-radius: 10px; background: linear-gradient(135deg, #4f46e5, #4338ca); color: #fff; padding: 12px; font-weight: 600; }
+.faq-section { max-width: 900px; margin: 20px auto 40px; color: #0f172a; }
+.faq-item { background: #fff; border-radius: 12px; margin-bottom: 10px; }
+.faq-question { padding: 14px; cursor: pointer; display: flex; justify-content: space-between; }
+.faq-answer { display: none; padding: 0 14px 12px; color: #475569; }
+.faq-answer.active { display: block; }
+@media (max-width: 768px) { .contact-wrap { grid-template-columns: 1fr; } }

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Education Mentor</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="logo-section">
+        <img src="image/OUR_EDUCATION_MENTOR'S_png.png" alt="Logo">
+        <span>OUR EDUCATION MENTOR</span>
+    </div>
+
+    <div class="menu-toggle" id="menu-toggle">
+        <i class="fas fa-bars"></i>
+    </div>
+
+    <div class="menu" id="menu">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="course.html">Course</a>
+        <a href="contact.html">Contact</a>
+        <!-- Mobile only buttons -->
+        <a href="#" id="openLoginMobile" class="mobile-only mobile-login-link">Login</a>
+    </div>
+
+    <div class="nav-btns">
+        <a href="#" id="openLogin" class="btn-login">Login</a>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-content">
+       <p class="hero-subtitle">From <strong>Jharkhand</strong> For <strong>Jharkhand</strong> Student's</p>
+        <h1>No Ratta.</h1>
+        <h1>No Pressure.</h1>
+        <h1 class="gradient-text">Just Clear Concepts &amp; Real Confidence.</h1>
+        <p class="hero-subtitle">Especially designed for <strong>JAC Board Class 10</strong> students</p>
+        <div class="hero-btns">
+            <a href="course.html" class="hero-btn-primary">Start Learning</a>
+            <a href="#" id="openRegisterHero" class="hero-btn-secondary">Join Free</a>
+        </div>
+    </div>
+</section>
+
+<!-- FEATURES -->
+<section class="features">
+    <div class="features-grid">
+        <div class="feature-card">
+            <i class="fas fa-video"></i>
+            <h4>Video Lectures</h4>
+            <p>High quality video lessons in Hindi + English</p>
+        </div>
+        <div class="feature-card">
+            <i class="fas fa-file-pdf"></i>
+            <h4>PDF Notes</h4>
+            <p>Downloadable notes and study material</p>
+        </div>
+        <div class="feature-card">
+            <i class="fas fa-question-circle"></i>
+            <h4>PYQ Solved</h4>
+            <p>Previous year questions with complete solution</p>
+        </div>
+        <div class="feature-card">
+            <i class="fas fa-chart-line"></i>
+            <h4>Track Progress</h4>
+            <p>Monitor your learning journey daily</p>
+        </div>
+    </div>
+</section>
+
+<!-- ALERT BOX -->
+<div id="alertBox"></div>
+
+<!-- LOGIN MODAL -->
+<div id="loginModal" class="modal-overlay">
+    <div class="modal-box">
+        <button class="modal-close" id="closeModal">&times;</button>
+        <h2>Welcome Back!</h2>
+        <p class="modal-sub">Login to continue learning</p>
+
+        <form id="loginForm">
+            <div class="form-group">
+                <i class="fas fa-envelope"></i>
+                <input type="email" name="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+                <i class="fas fa-lock"></i>
+                <input type="password" name="password" placeholder="Your Password" required>
+            </div>
+            <p class="modal-sub" style="margin-bottom:12px;font-size:0.85rem;">Students and admin are redirected automatically after login.</p>
+            <button type="submit" class="modal-submit-btn" id="loginBtn">
+                <i class="fas fa-sign-in-alt me-2"></i>Login
+            </button>
+        </form>
+
+        <div class="modal-footer-link">
+            New student? <a href="#" id="openRegisterFromLogin">Create account here</a>
+        </div>
+    </div>
+</div>
+
+<div id="registerModal" class="modal-overlay">
+    <div class="modal-box">
+        <button class="modal-close" id="closeRegisterModal" type="button">&times;</button>
+        <h2>Create Account</h2>
+        <p class="modal-sub">Register as a student</p>
+        <form id="registerModalForm">
+            <div class="form-group">
+                <i class="fas fa-user"></i>
+                <input type="text" name="name" placeholder="Full Name" required>
+            </div>
+            <div class="form-group">
+                <i class="fas fa-envelope"></i>
+                <input type="email" name="email" placeholder="Email" required>
+            </div>
+            <div class="form-group">
+                <i class="fas fa-phone"></i>
+                <input type="tel" name="mobile" placeholder="Mobile Number" pattern="[0-9]{10}" maxlength="10" required>
+            </div>
+            <div class="form-group">
+                <i class="fas fa-lock"></i>
+                <input type="password" name="password" placeholder="Password (min 6 chars)" minlength="6" required>
+            </div>
+            <button type="submit" class="modal-submit-btn" id="registerModalBtn">
+                <i class="fas fa-user-plus me-2"></i>Register
+            </button>
+        </form>
+        <div class="modal-footer-link">
+            I already have an account. <a href="#" id="openLoginFromRegister">Login here</a>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/notices.js"></script>
+<script src="js/layout.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
